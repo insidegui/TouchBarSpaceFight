@@ -2,6 +2,8 @@
 
 A simple, fun game for the MacBook Pro's Touch Bar.
 
+[📹 See it in action 📹](https://youtu.be/K7cjIv-uDIo)
+
 ![shot](screenshots/touchbargame-1.png)
 ![shot](screenshots/touchbargame-2.png)
 ![shot](screenshots/touchbargame-3.png)
