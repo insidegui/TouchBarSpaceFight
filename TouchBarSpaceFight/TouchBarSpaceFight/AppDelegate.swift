@@ -42,7 +42,7 @@ extension NSTouchBarItemIdentifier {
     static let gameViewController = NSTouchBarItemIdentifier("br.com.guilhermerambo.touchasteroids")
 }
 
-@available(OSX 10.12.1, *)
+@available(OSX 10.12.2, *)
 extension AppDelegate: NSTouchBarDelegate, NSTouchBarProvider {
     
     var touchBar: NSTouchBar? {
