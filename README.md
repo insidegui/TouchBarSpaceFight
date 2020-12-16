@@ -14,7 +14,7 @@ You will need a new MacBook Pro with the Touch Bar or a [Touch Bar Simulator](ht
 
 [⬇️ Download the latest release here ⬇️](https://github.com/insidegui/TouchBarSpaceFight/releases).
 
-Run the game and look at your touch bar, the game runs in there. Use the arrow keys to move the player and the space key to shoot, your goal is to avoid being hit by enemies and use the least ammount of shots possible to destroy as many enemies as possible.
+Run the game and look at your touch bar, the game runs in there. Use the arrow keys to move the player and the space key to shoot, your goal is to avoid being hit by enemies and use the least amount of shots possible to destroy as many enemies as possible.
 
 ### Disclaimer
 
