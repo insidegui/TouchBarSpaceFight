@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     fileprivate var screenViewController: ScreenViewController!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        screenViewController = NSApp.windows.first!.contentViewController as! ScreenViewController
+        screenViewController = (NSApp.windows.first!.contentViewController as! ScreenViewController)
         
         NotificationCenter.default.addObserver(forName: .RestartGame, object: nil, queue: nil) { _ in
             self.gameViewController.reset()
@@ -38,8 +38,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 @available(OSX 10.12.1, *)
-extension NSTouchBarItemIdentifier {
-    static let gameViewController = NSTouchBarItemIdentifier("br.com.guilhermerambo.touchasteroids")
+extension NSTouchBarItem.Identifier {
+    static let gameViewController = NSTouchBarItem.Identifier("br.com.guilhermerambo.touchasteroids")
 }
 
 @available(OSX 10.12.2, *)
@@ -54,9 +54,9 @@ extension AppDelegate: NSTouchBarDelegate, NSTouchBarProvider {
         return bar
     }
     
-    func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItemIdentifier) -> NSTouchBarItem? {
+    func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
         switch identifier {
-        case NSTouchBarItemIdentifier.gameViewController:
+        case NSTouchBarItem.Identifier.gameViewController:
             let item = NSCustomTouchBarItem(identifier: .gameViewController)
             
             if gameViewController == nil {

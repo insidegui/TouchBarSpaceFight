@@ -36,19 +36,11 @@ class GameViewController: NSViewController, GameSceneDelegate {
     
     private lazy var gameView: SKView = {
         let v = SKView(frame: self.view.bounds)
-        v.autoresizingMask = [.viewWidthSizable, .viewHeightSizable]
-        
+        v.autoresizingMask = [.width, .height]
+
         return v
     }()
-    
-    init() {
-        super.init(nibName: nil, bundle: nil)!
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+
     override func loadView() {
         view = NSView()
         view.addSubview(gameView)

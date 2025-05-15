@@ -13,7 +13,7 @@ extension Notification.Name {
     static let GameOver = Notification.Name(rawValue: "TouchBarSpaceFightGameOver")
 }
 
-protocol GameSceneDelegate: class {
+protocol GameSceneDelegate: AnyObject {
     var state: GameModels.GameState { get set }
 }
 
@@ -28,7 +28,7 @@ extension SKScene {
 extension CGFloat {
     
     static func random() -> CGFloat {
-        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
+        return CGFloat(Float(arc4random()) / 4294967296)
     }
     
     static func random(min: CGFloat, max: CGFloat) -> CGFloat {

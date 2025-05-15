@@ -110,6 +110,6 @@ struct GameModels {
         
 }
 
-protocol EventHandler: class {
+protocol EventHandler: AnyObject {
     func key(event: GameModels.KeyEvent)
 }
